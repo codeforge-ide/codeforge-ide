@@ -11,10 +11,17 @@ export default function Header() {
     <AppBar position="static" color="transparent" elevation={0}>
       <Toolbar sx={{ justifyContent: "space-between" }}>
         <Box sx={{ display: "flex", alignItems: "center" }}>
-          <Typography variant="h6" sx={{ fontWeight: 700, letterSpacing: 1 }}>
-            CodeForgeAI
-          </Typography>
-        </Box>
+            <Link href="/" passHref style={{ display: 'flex', alignItems: 'center' }}>
+              <img
+                src="/codeforge-ide.png"
+                alt="CodeForgeAI Logo"
+                style={{ width: 36, height: 36, marginRight: 12 }}
+              />
+              <Typography variant="h6" sx={{ fontWeight: 700, letterSpacing: 1 }}>
+                CodeForgeAI
+              </Typography>
+            </Link>
+          </Box>
         <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
           <Link href="#features" passHref>
             <Button color="inherit">Features</Button>
