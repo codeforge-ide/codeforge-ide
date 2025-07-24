@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+**code-instructions*
+GEMINI.md 
+opencode.md
+.docx/
