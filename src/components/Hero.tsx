@@ -105,8 +105,9 @@ export default function Hero() {
             </Typography>
 
             <Stack direction={{ xs: "column", sm: "row" }} spacing={3} sx={{ mb: 4 }}>
-              <Link href="/auth" passHref>
+              <Link href="https://github.com/codeforge-ide/codeforgeai.go" target="_blank" rel="noopener" passHref>
                 <Button 
+                  component="a"
                   variant="contained" 
                   size="large"
                   sx={{ 
