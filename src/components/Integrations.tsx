@@ -8,29 +8,22 @@ import Avatar from "@mui/material/Avatar";
 
 const integrations = [
   {
-    name: "Ollama",
-    description: "Run local LLMs for fast, private code analysis and automation.",
-    icon: "🦙",
-  },
-  {
-    name: "OpenAI",
-    description: "Leverage OpenAI models for high-quality completions, code review, and documentation.",
-    icon: "🤖",
-  },
-  {
-    name: "GitHub Copilot",
-    description: "Enhance Copilot with full project context, smart code analysis, and auto-generated commit messages.",
+    name: "GitHub",
+    description: "Deep repository integration for scans, PR automation, and CI insights.",
     icon: "🐙",
+    color: "#24292f",
   },
   {
-    name: "Astrolescent DeFi",
-    description: "Get real-time DeFi data, token prices, and analytics in your AI workflows.",
-    icon: "🌌",
+    name: "Models & Claude",
+    description: "Plug into Claude and other LLM providers for multi-LLM workflows.",
+    icon: "🧠",
+    color: "#7b61ff",
   },
   {
-    name: "IO Intelligence API",
-    description: "Advanced agent workflows, multi-agent orchestration, and scalable AI tasks.",
-    icon: "🌐",
+    name: "CoinGecko (MCP)",
+    description: "Real-time market and token data via the Model Context Protocol.",
+    icon: "💱",
+    color: "#f2a900",
   },
 ];
 
@@ -40,12 +33,12 @@ export default function Integrations() {
       <Typography variant="h4" sx={{ fontWeight: 700, mb: 4, textAlign: "center" }}>
         Integrations
       </Typography>
-      <Grid container spacing={4} justifyContent="center">
+      <Grid container spacing={4}>
         {integrations.map((integration, idx) => (
           <Grid size={{ xs: 12, sm: 6, md: 4 }} key={idx}>
-            <Card sx={{ background: "#171717", color: "#ededed", minHeight: 160, display: "flex", alignItems: "center" }} elevation={2}>
+            <Card sx={{ background: "rgba(17,17,17,0.85)", color: "#ededed", minHeight: 160, display: "flex", alignItems: "center", border: `1px solid ${integration.color}` }} elevation={2}>
               <CardContent sx={{ display: "flex", alignItems: "center", gap: 2 }}>
-                <Avatar sx={{ bgcolor: "#333", width: 48, height: 48, fontSize: 32 }}>
+                <Avatar sx={{ bgcolor: integration.color, width: 48, height: 48, fontSize: 24 }}>
                   {integration.icon}
                 </Avatar>
                 <Box>
