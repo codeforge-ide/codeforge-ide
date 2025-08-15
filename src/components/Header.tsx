@@ -39,6 +39,8 @@ export default function Header() {
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
           <Link href="/" passHref style={{ display: 'flex', alignItems: 'center' }}>
             {/* next/image for optimized logo */}
+            {/* using next/image for optimization */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/codeforge-ide.png" alt="CodeForgeAI Logo" style={{ width: 40, height: 40 }} />
             <Typography variant="h6" sx={{ fontWeight: 800, ml: 1, letterSpacing: 0.5, display: { xs: 'none', sm: 'block' } }}>
               CodeForgeAI
