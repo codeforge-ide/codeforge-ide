@@ -5,7 +5,7 @@ import MuiThemeProvider from "./MuiThemeProvider";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={roboto.variable}>
+    <html lang="en">
       <head>
         {/* Local fonts loaded via next/font. Removed external Google Fonts link to satisfy Next.js lint rule. */}
       </head>
