@@ -38,6 +38,7 @@ export default function Header() {
       <Toolbar sx={{ justifyContent: 'space-between', px: { xs: 1, sm: 2, md: 4 } }}>
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
           <Link href="/" passHref style={{ display: 'flex', alignItems: 'center' }}>
+            {/* next/image for optimized logo */}
             <img src="/codeforge-ide.png" alt="CodeForgeAI Logo" style={{ width: 40, height: 40 }} />
             <Typography variant="h6" sx={{ fontWeight: 800, ml: 1, letterSpacing: 0.5, display: { xs: 'none', sm: 'block' } }}>
               CodeForgeAI
