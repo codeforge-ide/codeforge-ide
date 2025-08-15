@@ -8,7 +8,14 @@ import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import MenuIcon from '@mui/icons-material/Menu';
+// Use a simple svg fallback for MenuIcon to avoid adding new dependency
+const MenuIcon = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+    <rect x="3" y="6" width="18" height="2" fill="currentColor" />
+    <rect x="3" y="11" width="18" height="2" fill="currentColor" />
+    <rect x="3" y="16" width="18" height="2" fill="currentColor" />
+  </svg>
+);
 import Link from "next/link";
 import { useTheme } from "@mui/material/styles";
 

@@ -122,7 +122,7 @@ export default function Hero() {
                   Start Building
                 </Button>
               </Link>
-              <Link href="https://github.com/codeforge-ide" target="_blank" rel="noopener">
+              <Link href="https://github.com/codeforge-ide/codeforgeai.go" target="_blank" rel="noopener">
                 <Button 
                   variant="outlined" 
                   size="large"
