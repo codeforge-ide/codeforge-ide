@@ -148,7 +148,7 @@ export default function Features() {
 
         <Grid container spacing={4}>
           {features.map((feature, idx) => (
-            <Grid item xs={12} sm={6} lg={4} key={idx}>
+            <Grid size={{ xs: 12, sm: 6, lg: 4 }} key={idx}>
               <FeatureCard feature={feature} />
             </Grid>
           ))}

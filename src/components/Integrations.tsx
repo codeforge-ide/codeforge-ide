@@ -34,7 +34,7 @@ export default function Integrations() {
         Integrations
       </Typography>
       <Grid container spacing={4}>
-        {integrations.map((integration, idx) => (
+{integrations.map((integration, idx) => (
           <Grid size={{ xs: 12, sm: 6, md: 4 }} key={idx}>
             <Card sx={{ background: "rgba(17,17,17,0.85)", color: "#ededed", minHeight: 160, display: "flex", alignItems: "center", border: `1px solid ${integration.color}` }} elevation={2}>
               <CardContent sx={{ display: "flex", alignItems: "center", gap: 2 }}>
